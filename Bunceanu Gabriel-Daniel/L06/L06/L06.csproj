@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>L06</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CSharp.Choices" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Access.Primitives.IO\Access.Primitives.IO.csproj" />
+  </ItemGroup>
+
+</Project>
