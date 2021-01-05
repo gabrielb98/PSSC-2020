@@ -36,9 +36,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Database", "2. Database"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Grains", "4. Grains", "{5B944B83-A041-4591-B4A4-2B79F442BF4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainInterfaces", "GrainInterfaces\GrainInterfaces.csproj", "{5598878B-7187-4856-8322-2C1E3ED0F969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrainInterfaces", "GrainInterfaces\GrainInterfaces.csproj", "{5598878B-7187-4856-8322-2C1E3ED0F969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrainImplementation", "GrainImplementation\GrainImplementation.csproj", "{081C60D6-5B49-48FE-9049-8CB6707251B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrainImplementation", "GrainImplementation\GrainImplementation.csproj", "{081C60D6-5B49-48FE-9049-8CB6707251B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5929AB1D-D009-4C2F-B301-22CB616D19F5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silo", "Silo\Silo.csproj", "{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +103,14 @@ Global
 		{081C60D6-5B49-48FE-9049-8CB6707251B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{081C60D6-5B49-48FE-9049-8CB6707251B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{081C60D6-5B49-48FE-9049-8CB6707251B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +128,8 @@ Global
 		{757BCBBF-D1FF-4B02-9A2D-B7F6F4F7D364} = {C067839E-54C8-4139-9733-D10F9433B919}
 		{5598878B-7187-4856-8322-2C1E3ED0F969} = {5B944B83-A041-4591-B4A4-2B79F442BF4E}
 		{081C60D6-5B49-48FE-9049-8CB6707251B5} = {5B944B83-A041-4591-B4A4-2B79F442BF4E}
+		{2273A60E-04A2-461D-BBB0-1DD1C8AAC5A3} = {5B944B83-A041-4591-B4A4-2B79F442BF4E}
+		{B85FB09A-C2A9-4CA5-AC50-89FED38BD7A3} = {5B944B83-A041-4591-B4A4-2B79F442BF4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6F2CE43-5046-4A65-965C-46DF61964A4E}

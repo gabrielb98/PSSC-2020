@@ -133,17 +133,17 @@ namespace StackUnderflow.EF.Models
 
             modelBuilder.Entity<PostTag>(entity =>
             {
-                entity.HasKey(e => new { e.TenantId, e.QuestionId, e.TagId });
+                entity.HasKey(e => new { e.TenantId, e.PostId, e.TagId });
 
                 entity.HasIndex(e => new { e.TagId, e.TenantId })
                     .HasName("FK_PostTag_Tag");
 
-                entity.HasIndex(e => new { e.TenantId, e.QuestionId })
+                entity.HasIndex(e => new { e.TenantId, e.PostId })
                     .HasName("FK_PostTag_Post");
 
                 entity.HasOne(d => d.Post)
                     .WithMany(p => p.PostTag)
-                    .HasForeignKey(d => new { d.TenantId, d.QuestionId })
+                    .HasForeignKey(d => new { d.TenantId, d.PostId })
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_PostTag_Post");
 

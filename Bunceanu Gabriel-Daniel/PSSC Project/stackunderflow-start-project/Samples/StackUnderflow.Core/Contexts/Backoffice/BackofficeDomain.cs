@@ -6,7 +6,7 @@ using LanguageExt;
 using StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp;
 using StackUnderflow.Domain.Schema.Backoffice.InviteTenantAdminOp;
 using static PortExt;
-using static StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp.CreateTenantResult;
+using static StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp.CreateQuestionResult;
 using static StackUnderflow.Domain.Schema.Backoffice.InviteTenantAdminOp.InviteTenantAdminResult;
 
 namespace StackUnderflow.Domain.Core

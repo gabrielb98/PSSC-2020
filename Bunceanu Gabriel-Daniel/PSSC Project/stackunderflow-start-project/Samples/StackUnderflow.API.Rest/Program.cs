@@ -30,10 +30,10 @@ namespace FakeSO.API.Rest
                 {
                     siloBuilder.UseLocalhostClustering()
                     .Configure<ClusterOptions>(options =>
-                     {
-                         options.ClusterId = "dev";
-                         options.ServiceId = "OrleansBasics";
-                     })
+                    {
+                        options.ClusterId = "dev";
+                        options.ServiceId = "OrleansBasics";
+                    })
                     .ConfigureApplicationParts(
                         parts => parts.AddApplicationPart(typeof(EmailSenderGrain).Assembly)
                                 .WithReferences());

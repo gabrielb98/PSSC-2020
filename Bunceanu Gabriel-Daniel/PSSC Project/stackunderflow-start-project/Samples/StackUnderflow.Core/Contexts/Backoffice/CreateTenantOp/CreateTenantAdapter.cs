@@ -10,7 +10,7 @@ using Access.Primitives.IO.Attributes;
 using Access.Primitives.IO.Mocking;
 using StackUnderflow.Domain.Core.Contexts;
 using StackUnderflow.EF.Models;
-using static StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp.CreateTenantResult;
+using static StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp.CreateQuestionResult;
 using StackUnderflow.Domain.Schema.Backoffice;
 
 namespace StackUnderflow.Backoffice.Adapters.CreateTenant
@@ -70,7 +70,7 @@ namespace StackUnderflow.Backoffice.Adapters.CreateTenant
             return tenant;
         }
 
-        public override Task PostConditions(CreateTenantCmd op, CreateTenantResult.ICreateTenantResult result, BackofficeWriteContext state)
+        public override Task PostConditions(CreateTenantCmd op, CreateQuestionResult.ICreateTenantResult result, BackofficeWriteContext state)
         {
             return Task.CompletedTask;
         }

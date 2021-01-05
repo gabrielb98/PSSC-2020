@@ -7,29 +7,27 @@ using CSharp.Choices;
 using LanguageExt;
 using StackUnderflow.EF.Models;
 
-namespace StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp
+namespace StackUnderflow.Domain.Schema.Question.CreateQuestionOp
 {
     [AsChoice]
     public static partial class CreateQuestionResult
     {
-        public interface ICreateTenantResult : IDynClonable { }
+        public interface ICreateQuestionResult : IDynClonable { }
 
-        public class TenantCreated : ICreateTenantResult
+        public class QuestionCreated : ICreateQuestionResult
         {
-            public Tenant Tenant { get; }
-            public User AdminUser { get; }
+            public Post Question { get; }
 
-            public TenantCreated(Tenant tenant, User adminUser)
+            public QuestionCreated(Post Question)
             {
-                Tenant = tenant;
-                AdminUser = adminUser;
+                this.Question = Question;
             }
 
             public object Clone() => this.ShallowClone();
 
         }
 
-        public class TenantNotCreated : ICreateTenantResult
+        public class QuestionNotCreated : ICreateQuestionResult
         {
             public string Reason { get; private set; }
 
@@ -37,7 +35,7 @@ namespace StackUnderflow.Domain.Schema.Backoffice.CreateTenantOp
             public object Clone() => this.ShallowClone();
         }
 
-        public class InvalidRequest : ICreateTenantResult
+        public class InvalidRequest : ICreateQuestionResult
         {
             public string Message { get; }
 
